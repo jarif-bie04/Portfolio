@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    background-color: red;
+    width: 15vw;
+    font-family: "Lato", sans-serif;
+    height: 100vh;
+}
+.sidebar nav{
+    padding: 25px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 33px 0;
+}
+.main{
+    background-color: yellow;
+    width: 100vw;
+}
+.container{
+    display: flex;
+
+}
+
+.infocontainer{
+    background-color: blue;
+    height: 78vh;
+    width: 80vw;
+    margin: 147px auto;
+}
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.infocontainer {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
