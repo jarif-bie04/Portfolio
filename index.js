@@ -211,3 +211,67 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         this.reset();
     }
 });
+
+// Optimized typing animation
+function setupTypingAnimation() {
+    const words = ["Bioinformatics Engineer", "Software Engineer"];
+    const typingElement = document.querySelector('.typing-words');
+    const cursorElement = document.querySelector('.typing-cursor');
+    
+    if (!typingElement) return;
+
+    // Set fixed width based on longest word to prevent layout shifts
+    const calculateWidth = () => {
+        typingElement.style.display = 'inline-block';
+        typingElement.style.visibility = 'hidden';
+        typingElement.style.position = 'absolute';
+        
+        let maxWidth = 0;
+        words.forEach(word => {
+            typingElement.textContent = word;
+            maxWidth = Math.max(maxWidth, typingElement.offsetWidth);
+        });
+        
+        typingElement.style.cssText = ''; // Reset styles
+        return maxWidth;
+    };
+
+    const containerWidth = calculateWidth();
+    document.querySelector('.typing-container').style.width = `${containerWidth}px`;
+    
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100; // ms per character
+    
+    function type() {
+        const currentWord = words[wordIndex];
+        
+        if (isDeleting) {
+            typingElement.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+            typingSpeed = 50; // Faster when deleting
+        } else {
+            typingElement.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+            typingSpeed = 100;
+        }
+        
+        // Change word when complete
+        if (!isDeleting && charIndex === currentWord.length) {
+            isDeleting = true;
+            typingSpeed = 1500; // Pause at end
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            typingSpeed = 500; // Pause between words
+        }
+        
+        setTimeout(type, typingSpeed);
+    }
+    
+    // Start animation
+    setTimeout(type, 1000);
+}
+
+document.addEventListener('DOMContentLoaded', setupTypingAnimation);
