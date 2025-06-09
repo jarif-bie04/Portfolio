@@ -9,18 +9,20 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
 
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">Educations</a>
-            <a href="#">Experiences & Skills</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Educations</a>
+            <a href="#experience">Experiences & Skills</a>
             <a href="#">Projects</a>
             <a href="#">Researches</a>
             <a href="#">Contact me</a>
         </nav>
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-img">
             <img src="89781.jpg" alt="">
         </div>
@@ -31,11 +33,92 @@
                 <br><br>I'm studying in Bangladesh Agricultural University.
             </p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/jarif-ayman005/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/jarif-bie04"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.facebook.com/jarif.ayman"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/jarif-ayman005/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/jarif-bie04" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/jarif.ayman" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             </div>
         </div>
     </section>
+
+    <section id="education" class="education">
+        <h2>My Education</h2>
+        <div class="education-container">
+            <div class="education-item">
+                <h3>B.Sc. in Bioninformatics Engineering</h3>
+                <p class="degree">Bangladesh Agricultural Engineering</p>
+                <p class="date">2025 - Present</p>
+                <p class="description">Currently pursuing my bachelor's degree with a focus on computational biology, bioinformatics algorithms, and molecular modeling. Key courses include:
+                    <ul class="courses">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </p>
+            </div>
+            <br>
+            <div class="education-item">
+                <h3>Higher Secondary Certificate</h3>
+                <p class="degree">Govt Ananda Mohan College, Mymensingh</p>
+                <p class="date">2022 - 2023</p>
+                <p class="description">
+                    Completed HSC in Science with outstanding results <b>GPA 5.00/ 5.00</b> in <b>Science</b>.
+                </p>
+            </div>
+            <br>
+            <div class="education-item">
+                <h3>Secondary School Certificate</h3>
+                <p class="degree">Mymensingh Zilla School</p>
+                <p class="date">2013 - 2021</p>
+                <p class="description">
+                    Completed SSC in Science with excellent results <b>GPA 5.00/ 5.00</b> in <b>Science</b>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+    <h2>Professional Experiences</h2>
+        <div class="experience-container">
+            <div class="experience-item">
+                <h3>[Job Position]</h3>
+                <p class="degree">[Company Name]</p>
+                <p class="date">From - To</p>
+                <p class="description">[Describe about the job contribution.]
+                    <ul class="courses">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </p>
+             </div>
+            <br>
+        </div>
+    </section>
+
+    <section id="skill" class="skill">
+    <h2>Expertises</h2>
+        <div class="skill-container">
+            <div class="skill-item">
+                <h3>[Job Position]</h3>
+                <p class="skill-lists">[Company Name]</p>
+                <p class="date">From - To</p>
+                <p class="description">[Describe about the job contribution.]
+                    <ul class="item">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </p>
+            </div>
+            <br>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+
 </body>
 </html>
