@@ -10,11 +10,39 @@ menuBtn.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
 
-// Close mobile menu when clicking a link
+// Close mobile menu and smooth scroll when clicking a link
 navLinks.forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default anchor behavior
+        
+        // Close mobile menu if open
         menuBtn.classList.remove('active');
         navbar.classList.remove('active');
+        
+        // Get the target section ID from the href attribute
+        const targetId = link.getAttribute('href');
+        if (targetId === '#home') {
+            // Special case for home to scroll to top
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else if (targetId.startsWith('#')) {
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                // Calculate the position to scroll to (accounting for fixed header)
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = targetSection.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+                
+                // Update URL without jumping
+                history.pushState(null, null, targetId);
+            }
+        }
     });
 });
 
@@ -214,7 +242,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
 // Optimized typing animation
 function setupTypingAnimation() {
-    const words = ["Bioinformatics Engineer", "Software Engineer"];
+    const words = ["Bioinformatics Engineer", "Software Engineer","Web Developer"];
     const typingElement = document.querySelector('.typing-words');
     const cursorElement = document.querySelector('.typing-cursor');
     
