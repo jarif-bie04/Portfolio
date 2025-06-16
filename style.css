@@ -121,8 +121,8 @@ nav a:active{
 }
 
 .typing-container{
-    font: 12rem;
     font-weight: bold;
+    white-space: nowrap;
 }
 .typing-text{
     font-size: 2rem;
@@ -226,16 +226,16 @@ section{
 }
 
 .home .home-content h1{
-    font-size: 6rem;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.3;
     color: #8c1515;
 }
 
-.home-content h3{
-    font-size: 4rem;
+.home-content .typing-text1{
+    font-size: 2.5rem;
     margin-bottom: 0.1rem;
-    font-weight: 700;
+    font-weight: 200;
 }
 
 .home-content p{
@@ -243,8 +243,7 @@ section{
     font-size: 1.6rem;
     line-height: 1.6;
     text-align: justify;
-    margin-top: 0.7rem;
-    flex: 1 1 0%;
+    margin-top: 0;
 }
 
 .home-img img:hover{
