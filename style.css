@@ -127,11 +127,11 @@ nav a:active{
 .typing-text{
     font-size: 2rem;
 }
-
 .typing-words{
     color: #8c1515;
     position: relative;
     display: inline-block;
+    font-size: 2rem;
 }
 
 .typing-cursor{
@@ -239,12 +239,21 @@ section{
 }
 
 .home-content p{
-    font-size: 3rem;
+    color: black;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 0.7rem;
+    flex: 1 1 0%;
 }
 
 .home-img img:hover{
     font-size: 1.8rem;
     font-weight: 500;
+}
+
+.social-icons{
+    text-align: center;
 }
 
 .social-icons a{
@@ -333,7 +342,7 @@ section{
 }
 
 .education-item:hover{
-    transform: translateY(-5px);
+    transform: translateY(-2px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -362,6 +371,7 @@ section{
     line-height: 1.6;
     color: black;
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 .courses {
@@ -449,7 +459,7 @@ section{
 }
 
 .experience-item:hover{
-    transform: translateY(-5px);
+    transform: translateY(-2px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -473,11 +483,12 @@ section{
     font-style: italic;
 }
 
-.description {
+.job-description {
     font-size: 1.6rem;
     line-height: 1.6;
     color: black;
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 .item {
@@ -552,7 +563,7 @@ section{
 }
 
 .expertise-category:hover {
-    transform: translateY(-10px);
+    transform: translateY(-2px);
 }
 
 .expertise-category h3 {
@@ -750,6 +761,7 @@ section{
     line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    text-align: justify;
 }
 
 .view-btn {
@@ -833,6 +845,7 @@ section{
     font-size: 1.6rem;
     line-height: 1.6;
     margin-bottom: 2rem;
+    text-align: justify;
 }
 
 .project-button {
@@ -910,7 +923,7 @@ section{
 }
 
 .research-card:hover{
-    transform: translateY(-5px);
+    transform: translateY(0px);
 }
 
 .research-header{

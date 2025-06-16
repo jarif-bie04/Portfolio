@@ -242,7 +242,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
 // Optimized typing animation
 function setupTypingAnimation() {
-    const words = ["Bioinformatics Engineer", "Software Engineer","Web Developer"];
+    const words = [" Bioinformatics Engineer", " Software Engineer", " Web Developer"];
     const typingElement = document.querySelector('.typing-words');
     const cursorElement = document.querySelector('.typing-cursor');
     
