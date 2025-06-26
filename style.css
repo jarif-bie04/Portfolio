@@ -737,7 +737,7 @@ section{
     background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
     color: white;
     padding: 2rem;
-    transform: translateY(100px);
+    transform: 0;
     transition: transform 0.3s ease;
 }
 
