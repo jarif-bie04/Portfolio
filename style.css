@@ -251,6 +251,28 @@ section{
     font-weight: 500;
 }
 
+.download-btn{
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1.2rem 2.5rem;
+    background-color: #8c1515;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.download-btn:hover{
+    background-color: #6d0f0f;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn i{
+    margin-left: 0.5rem;
+}
+
 .social-icons{
     text-align: center;
 }
