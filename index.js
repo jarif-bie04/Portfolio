@@ -147,7 +147,7 @@ const projectsData = {
         title: "BioFuzzAnalyzer",
         image: "BioFuzzAnalyzer.png",
         description: "BioFuzzAnalyzer is a Python-based GUI tool for fuzzy DNA sequence search. It allows users to upload DNA sequences, define custom match, mismatch, and gap scores, and identify top-scoring local alignments using a Smith-Waterman-inspired algorithm. Results are presented with detailed alignment views and can be exported as PDF reports, making it ideal for bioinformatics analysis and research.",
-        link: "https://github.com/yourusername/genome-analysis-tool"
+        link: "https://github.com/jarif-bie04/Fuzzy-DNA-Search"
     }
 };
 
